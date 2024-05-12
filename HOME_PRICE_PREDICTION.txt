@@ -1,0 +1,42 @@
+Importing Libraries:
+
+import pandas as pd: Imports the Pandas library and assigns an alias pd for easy reference.
+import numpy as np: Imports the NumPy library and assigns an alias np.
+import matplotlib.pyplot as plt: Imports the Matplotlib library's pyplot module and assigns an alias plt.
+import seaborn as sns: Imports the Seaborn library and assigns an alias sns.
+Loading Data:
+
+d=pd.read_csv("/content/sample_data/california_houses.zip"): Loads a CSV file named "california_houses.zip" into a Pandas DataFrame named d.
+d.dropna(inplace=True): Drops rows with missing values from the DataFrame d.
+Train-Test Split:
+
+train_test_split(): Splits the data into training and testing sets.
+Exploratory Data Analysis (EDA):
+
+hist(): Plots histograms of the features in the training data.
+corr(): Computes the correlation matrix between numerical features.
+sns.heatmap(): Visualizes the correlation matrix using a heatmap.
+value_counts(): Returns counts of unique values in a column.
+Feature Engineering:
+
+np.log(): Applies the natural logarithm to the specified feature columns.
+pd.get_dummies(): Converts categorical variable into dummy/indicator variables.
+Creating new features:
+bedroom_ratio: Ratio of total bedrooms to total rooms.
+household_rooms: Average number of rooms per household.
+Model Training:
+
+LinearRegression(): Instantiates a linear regression model.
+StandardScaler(): Standardizes features by removing the mean and scaling to unit variance.
+fit_transform(): Fits the scaler to the data and transforms it.
+fit(): Fits the linear regression model to the training data.
+score(): Computes the coefficient of determination (R^2) of the model.
+Testing:
+
+Preprocessing test data similarly to training data.
+Evaluating model performance on test data.
+These are the main methods used in the code, each serving a specific purpose in data loading, preprocessing, analysis, feature engineering, model training, and evaluation. Understanding these methods helps in comprehending the workflow of the machine learning project.
+
+
+
+
